@@ -36,3 +36,42 @@
     transform: rotate(360deg);
   }
 }
+.cont{
+  margin: 10px;
+  border-radius: 20px;
+  background-color: #2daae0;
+  padding: 20px;
+}
+.not{
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.logo_not{
+  border-radius: 20px;
+  height: 300px;
+}
+.H_not{
+  color: white;
+  font-size: 100px;
+  padding-top: 20px;
+}
+.H2_not{
+  padding: 0px 20px;
+  color: white;
+}
+button{
+  border: none;
+  border-radius: 10px;
+  height: 40px;
+  vertical-align: middle;
+  background-color: #2daae0;
+  color: white;
+  margin-top: 7px;
+  font-size: 20px;
+}
+button:hover{
+  background-color: white;
+  color: #2daae0;
+}
