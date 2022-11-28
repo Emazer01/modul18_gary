@@ -33,10 +33,10 @@ const Login = () => {
       })
       .then(function (response) {
         if (response.data=='Password Salah' || response.data=='Email Tidak Valid') {
-          console.log(response.data)
+          console.log(response)
           alert('Login Gagal')
         } else {
-          console.log(response.data);
+          console.log(response);
           localStorage.setItem('user',response.data.username)
           localStorage.setItem('id',response.data.id)
           localStorage.setItem('email',response.data.email)

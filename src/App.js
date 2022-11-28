@@ -4,8 +4,10 @@ import {
   Route
 } from "react-router-dom";
 import { Home, Login, Profile, Register, NotFound } from "./pages";
+import { useNavigate } from 'react-router-dom';
 
 function App() {
+  const navigate = useNavigate()
   return (
     <div>
       <Routes>
