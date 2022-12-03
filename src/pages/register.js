@@ -30,7 +30,7 @@ const Register = () => {
       const password = data.get('password')
       const email = data.get('email')
       if (username!='' && password!='' && email!='') {
-        axios.post(`http://${process.env.REACT_APP_BACKEND_URL}/register`, {
+        axios.post(`${process.env.REACT_APP_BACKEND_URL}/register`, {
           username: username,
           email   : email,
           password: password
