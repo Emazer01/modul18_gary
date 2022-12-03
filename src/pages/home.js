@@ -45,7 +45,7 @@ const Home = () => {
 
         // 3. definisikan fungsi verifikasi token
         function verifikasi(user,token){
-            axios.post('http://localhost:1200/verify', {
+            axios.post(`http://${process.env.REACT_APP_BACKEND_URL}/verify`, {
                 token   : token
             })
             .then(function (response) {

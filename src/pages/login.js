@@ -27,7 +27,7 @@ const Login = () => {
 
       const email = data.get('email')
       const password = data.get('password')
-      axios.post('http://localhost:1200/login', {
+      axios.post(`http://${process.env.REACT_APP_BACKEND_URL}/login`, {
         email   : email,
         password: password,
       })

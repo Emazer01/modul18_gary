@@ -11,6 +11,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import axios from 'axios';
 import {useNavigate} from 'react-router-dom';
 
+
 // Abaikan kode di bawah ini
 const theme = createTheme();
   
@@ -29,7 +30,7 @@ const Register = () => {
       const password = data.get('password')
       const email = data.get('email')
       if (username!='' && password!='' && email!='') {
-        axios.post('http://localhost:1200/register', {
+        axios.post(`http://${process.env.REACT_APP_BACKEND_URL}/register`, {
           username: username,
           email   : email,
           password: password
